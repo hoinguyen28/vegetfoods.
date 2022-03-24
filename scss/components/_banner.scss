@@ -1,0 +1,48 @@
+.banner{
+    color: #ffff;
+    a{
+        color: #ffff;
+    }
+    &__wrap__1{
+        position: relative;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.25), 
+            rgba(0, 0, 0, 0.25)
+          ), url(../assest/img/background_1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 50%;
+        height: 650px;
+    }    
+    &__wrap__2{
+        position: relative;
+        background-image:  linear-gradient(
+            rgba(0, 0, 0, 0.25), 
+            rgba(0, 0, 0, 0.25)
+          ), url(../assest/img/background_2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 50%;
+        height: 650px;
+    }
+    &__content{
+        width: 100%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top:50%;
+        text-align: center;
+        
+    }
+    @media screen and (max-width: 1023px) {
+        h1{
+            font-size:76px;
+        }
+    }
+    @media (max-width:739px) {
+        h1{
+            font-size: 95px;
+        }
+    }
+}
+

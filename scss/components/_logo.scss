@@ -1,0 +1,18 @@
+.logo{
+    padding-top: 0 !important;
+    &__wrap{
+        display:flex;
+    }
+    &__img{
+        padding: 0 45px;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    @media (max-width:739px) {  
+        &__img{
+            width: 100%;
+        }
+    }
+}

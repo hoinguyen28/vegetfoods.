@@ -1,0 +1,20 @@
+.button{
+    color: #fff;
+    display: inline-block;
+    background: $green;
+    border: 1px solid $green;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 7px 20px;
+    transition:0.5s;
+}
+.button:hover{
+    background:none;
+    color: $green !important;
+    transition:0.5s;
+}
+.slick-next {
+    display: none !important;
+    right: -25px;
+}

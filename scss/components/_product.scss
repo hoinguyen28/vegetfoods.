@@ -1,0 +1,111 @@
+.product {
+    &__title{
+        width: 100%;
+        text-align: center;
+        h2{
+            padding: 20px 0;
+        }
+        p{
+            padding-bottom: 50px;
+        }
+    }
+    &__item {
+        border: 1px solid $text;
+        position: relative;
+        padding-bottom:36px;
+    }
+    &__item:hover &__cart{
+        display: flex;
+    }
+    &__item:hover &__price{
+        opacity: 0;
+    }
+    &__img {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transition: 0.24s;
+        }
+        &:hover img{
+            transition: all 0.24s ease-in-out;
+            transform: scale(1.1);
+        }
+        span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 4px 8px;
+            background-color: $green;
+            font-size: 13px;
+            color: white;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: column;
+        justify-content: center;
+    }
+    &__price,
+    &__name {
+        text-align: center;
+    }
+    &__price-old {
+        text-decoration: line-through;
+        color: gray;
+        margin-right: 8px;
+    }    
+    &__price-new {
+        color:$green;
+    }
+    &__cart {  
+        display: none;
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        transform:translateX(-50%);
+        justify-content: center;
+        transition:0.24s;
+    }
+    &__menu{
+        width: 50%;
+        min-width:150px;
+        margin-bottom: 10px;
+    }
+    &__wrap{
+        display: flex;
+        justify-content: center;
+    }
+    &__icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: $green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: #fff;
+        border-radius:50%;
+        padding: 10px;
+        margin: 0;
+        i{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        &__block{
+            width: 50%;
+            margin-bottom:24px;
+        }
+    }
+    @media (max-width:739px) {    
+        &__block{
+            width: 100%;
+            margin-bottom:24px;
+        }
+    }
+}
+

@@ -1,0 +1,17 @@
+.time{
+    background-image: url(../assest/img/bg_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 50%;
+    height: 500px;
+    padding: 130px 0;
+    p{
+        padding-bottom: 20px;
+    }
+    span{
+        font-size: 35px;
+        font-family: "Lora", Georgia, serif;
+        font-style: italic;
+        color: $green;
+    }
+}

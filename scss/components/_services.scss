@@ -1,0 +1,65 @@
+.services {
+    padding-top: 90px !important;
+    &__item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item--1{
+        color: $pink;
+    }
+    &__wrap {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        font-size: 20px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            left: 10px;
+            border: 1px solid #ffff;
+            border-radius: 50%;
+        }
+        i {
+            font-size: 34px;
+            color: #ffff;
+        }
+    }
+    &__wrap:hover{
+        background-color: $green;
+        transition: 0.4s;
+
+    }
+    &__wrap--1{
+        background-color:$pink;
+        transition: 0.4s;
+    }
+    &__wrap--2{
+        background-color: $brown;
+        transition: 0.4s;
+    }
+    &__wrap--3{
+        background-color: $blue;
+        transition: 0.4s;
+    }
+    &__wrap--4{
+        background-color: $brown;
+        transition: 0.4s;
+    }   
+    @media (max-width:739px) {
+        &__mobile{
+            width: 100%;
+            
+        }
+    }
+}
+

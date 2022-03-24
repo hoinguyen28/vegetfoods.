@@ -1,0 +1,48 @@
+.footer{
+    h5{
+        padding: 20px 0;
+    }
+    p{
+        color: black;
+    }
+    li{
+        padding: 10px 0;
+        a{
+            color: black;
+        }
+    }
+    &__icons{
+        margin: 70px 10px;
+    }
+    &__icon{
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background-color: rgba(0, 0, 0, 0.02);
+        border-radius: 50%;
+        align-items: center;
+        i{
+            font-size:25px;
+        }
+    }
+    &__block{
+        i{
+            padding: 5px 10px;
+        }
+    }
+    &__copyright{
+        text-align: center;
+        margin: 10px 0;
+    }
+    @media (max-width:739px) {
+        &__content{
+            margin-bottom: 20px;
+        }
+        &__wrap{
+            width: 100%;
+        }
+        
+    }
+}

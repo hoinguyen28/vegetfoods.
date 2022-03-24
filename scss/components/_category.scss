@@ -1,0 +1,40 @@
+.category {
+    &__flex {
+        display: flex;
+    }
+    img {
+        width: 100%;
+        display: block;
+        height: 250px;
+    }
+    &__wrap {
+        position: relative;
+        span {
+            color: #ffff;
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            background-color: $green;
+            padding: 5px 12px;
+            font-size:18px;
+        }
+    }
+    &__content{
+        background-image: url(../assest/img/category_4.jpg);
+        background-size: cover;
+        background-position: center 50%;
+        text-align: center;
+        p{
+            padding: 16px 0;
+        }
+    }
+    @media (max-width:739px) {
+        &__content{
+            display: none;
+        }
+        &__mobile{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
